@@ -3,7 +3,7 @@
     <div class="recommend-title">热销推荐</div>
     <ul>
       <li class="item border-bottom"
-      v-for="item of recommendList"
+      v-for="item of list"
       :key="item.id">
         <img class="item-img" :src='item.imgUrl'>
         <div class="item-info">
@@ -19,28 +19,31 @@
 <script>
   export default{
     name:'HomeRecommend',
-    data() {
-      return{
-        recommendList:[{
-          id:'001',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/201212/18/f195032e85740a4b93835fbb.jpg_200x200_77761d11.jpg',
-          title:'杭州海底世界',
-          desc:'仿佛身处浩瀚神奇的海底深处'
-        },{
-          id:'002',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/201212/18/f195032e85740a4b93835fbb.jpg_200x200_77761d11.jpg',
-          title:'杭州海底世界',
-          desc:'仿佛身处浩瀚神奇的海底深处'
-        },{
-          id:'003',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/201212/18/f195032e85740a4b93835fbb.jpg_200x200_77761d11.jpg',
-          title:'杭州海底世界',
-          desc:'仿佛身处浩瀚神奇的海底深处'
-        }]
-      }
+    props:{
+      list:Array
+    },
+//    data() {
+//      return{
+//        recommendList:[{
+//          id:'001',
+//          imgUrl:'http://img1.qunarzz.com/sight/p0/201212/18/f195032e85740a4b93835fbb.jpg_200x200_77761d11.jpg',
+//          title:'杭州海底世界',
+//          desc:'仿佛身处浩瀚神奇的海底深处'
+//        },{
+//          id:'002',
+//          imgUrl:'http://img1.qunarzz.com/sight/p0/201212/18/f195032e85740a4b93835fbb.jpg_200x200_77761d11.jpg',
+//          title:'杭州海底世界',
+//          desc:'仿佛身处浩瀚神奇的海底深处'
+//        },{
+//          id:'003',
+//          imgUrl:'http://img1.qunarzz.com/sight/p0/201212/18/f195032e85740a4b93835fbb.jpg_200x200_77761d11.jpg',
+//          title:'杭州海底世界',
+//          desc:'仿佛身处浩瀚神奇的海底深处'
+//        }]
+//      }
 
 
-    }
+//    }
   }
 </script>
 

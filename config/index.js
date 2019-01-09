@@ -9,7 +9,14 @@ module.exports = {
 
     assetsSubDirectory: 'static', //// 编译输出的二级目录
     assetsPublicPath: '/', // 编译发布的根目录，可配置为资源服务器域名或 CDN 域名
-    proxyTable: {}, //我们通过自己创建的服务器去请求目标服务器，然后在从我们客户端去请求我们自己创建的服务器，这就不存在跨域了
+    proxyTable: {
+      '/api':{
+        target:'http://localhost:8080',
+        pathRewrite:{
+          '^/api':'/static/mock'
+        }
+      }
+    }, //我们通过自己创建的服务器去请求目标服务器，然后在从我们客户端去请求我们自己创建的服务器，这就不存在跨域了
     /**proxyTable: {
       '/api': {
         target: 'http://www.abc.com',  //目标接口域名
