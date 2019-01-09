@@ -85,35 +85,37 @@
       height:0
       /*background:green*/
       padding-bottom:50%
-    .icon
+    .icons
+      margin-top:.1rem
+      .icon
 
-      overflow:hidden
-      width:25%
-      height:0
-      float:left
-      padding-bottom:25%
-      /*background:red*/
-      .icon-img
-        position:absolute
-        top:0
-        left:0
-        right:0
-        bottom:.44rem
-        /*background:blue*/
-        box-sizing:border-box
-        padding:.1rem
-        .icon-img-content
-          height:100%
-          display:block
-          margin:0 auto
-      .icon-desc
+        overflow:hidden
+        width:25%
+        height:0
+        float:left
+        padding-bottom:25%
+        /*background:red*/
+        .icon-img
           position:absolute
+          top:0
           left:0
           right:0
-          bottom:0
-          height:.44rem
-          line-height:.44rem
-          color:$darkTextColor
-          text-align:center
-          ellipsis()
+          bottom:.44rem
+          /*background:blue*/
+          box-sizing:border-box
+          padding:.1rem
+          .icon-img-content
+            height:100%
+            display:block
+            margin:0 auto
+        .icon-desc
+            position:absolute
+            left:0
+            right:0
+            bottom:0
+            height:.44rem
+            line-height:.44rem
+            color:$darkTextColor
+            text-align:center
+            ellipsis()
 </style>
