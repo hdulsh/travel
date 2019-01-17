@@ -30,6 +30,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'styles': resolve('src/assets/styles'),
+      'common': resolve('src/common'),
       // 创建import或require的别名，一些常用的，路径长的都可以用别名
       // 其实在这里就是项目根目录中的src目录，使用 import somejs from "@/some.js" 就可以导入指定文件，是不是很高大上
     }
