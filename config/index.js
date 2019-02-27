@@ -57,7 +57,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'), //静态资源的根目录 也就是dist目录
     assetsSubDirectory: 'static',//静态资源根目录的子目录static，也就是dist目录下面的static
-    assetsPublicPath: '/', //静态资源的公开路径，也就是真正的引用路径
+    assetsPublicPath: './', //静态资源的公开路径，也就是真正的引用路径
 
     /**
      * Source Maps
