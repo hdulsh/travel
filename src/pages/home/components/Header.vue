@@ -12,7 +12,6 @@
         <span class="iconfont arrow-icon">&#xe639;</span>
       </div>
     </router-link>
-
   </div>
 </template>
 
