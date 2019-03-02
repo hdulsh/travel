@@ -113,7 +113,7 @@ import Bscroll from 'better-scroll'
     &:after
       border-color:#ccc
   .border-bottom
-    &before
+    &:before
      border-color:#ccc
   .list
     overflow:hidden
